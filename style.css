@@ -16,10 +16,26 @@ body {
     height: 100%;
     background-image: linear-gradient(to right, #222, #666);
 }
-
+#info{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    overflow: hidden; 
+    padding: 20px; 
+    color: rgba(255, 255, 255, 0.685);
+}
+#info h4{
+    margin-top: 20px;
+    font-weight: 400;
+}
 #cards {
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: #666;
     position: absolute;
     top: 50%;
@@ -30,9 +46,9 @@ body {
 }
 
 #stories {
-    height: 75px;
+    height: 16%;
     width: 100%;
-    background-color: #222;
+    background-color: rgb(0, 0, 0);
     /* white-space: nowrap; */
     /* overflow-x: auto; */
     /* overflow-y: hidden; */
@@ -46,14 +62,19 @@ body {
 }
 
 #story {
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
     background-color: #666;
     border-radius: 50%;
     overflow: hidden;
     /* display: inline-block; */
     display: inline-block;
     margin: 7px;
+    border: rgba(221, 48, 17, 0.603) solid;
+}
+#story:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #story img {
@@ -86,4 +107,72 @@ body {
     border-radius: 3px;
     height: 6px;
     background-color: rgb(54, 54, 54);
+}
+
+#posts{
+    width: 100%;
+    height: 84%;
+    overflow: hidden;
+    background-color: #111;
+}
+
+#posts header{
+    width: 100%;
+    height: 11%;
+    background-color: rgb(12, 12, 12);
+    color: rgba(255, 255, 255, 0.795);
+    display: flex;
+    align-items: center;
+    border-top: rgb(65, 64, 64) solid 0.000000000000000000000000000000000000000000001px;
+    border-bottom: rgb(65, 64, 64) solid 0.000000001px;
+}
+#dp{
+    height: 30px;
+    width: 30px;
+    
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position-y: 50%;
+}
+#picture{
+    height: 77%;
+    width: 100%;
+    background-image: url(mypic.jpeg);
+    background-size: cover;
+}
+#likeshare{
+    height: 12%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#leftlike{
+    height: 100%;
+    width: 50%;
+    color: aliceblue;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+#leftlike i{
+    padding-left: 10px;
+}
+#rightlike{
+    height: 100%;
+    width: 15%;
+    color: aliceblue;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+#rightlike i{
+    padding-right: 10px;
+}
+i:hover{
+    cursor: pointer;
 }
